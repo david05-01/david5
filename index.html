@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio - David Almeida</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  body {
+    margin: 0;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 900px;
+    background: #2c2a44dd;
+    margin: 2rem 1rem;
+    border-radius: 15px;
+    padding: 3rem 3rem 4rem;
+    box-shadow: 0 0 15px 3px #7f77a1a1;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 4px;
+    color: #e0c3fc;
+    text-shadow: 0 0 8px #c084fc;
+  }
+  header p.subtitle {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin-top: 0.25rem;
+    color: #b9b0d5;
+  }
+  nav {
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ce9ffc;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+  }
+  nav a:hover {
+    border-color: #f6c1ff;
+    color: #f6c1ff;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  section h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #926dea;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    color: #d3bbf9;
+  }
+  .about, .projects, .contact {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  .projects ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .projects li {
+    margin-bottom: 1rem;
+    background: #3a3674cc;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 6px 1px #7f77a1a1;
+    transition: background-color 0.3s ease;
+  }
+  .projects li:hover {
+    background: #564bbbcc;
+  }
+  .projects a {
+    color: #e9d9ff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .projects a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #928dabaa;
+    margin-top: 3rem;
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 2rem 1.5rem 3rem;
+    }
+    header h1 {
+      font-size: 2.25rem;
+    }
+    nav a {
+      margin: 0 0.75rem;
+      font-size: 0.95rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>David Almeida</h1>
+      <p class="subtitle">Desenvolvedor Frontend | Criador de Experiências Web Modernas</p>
+    </header>
+    <nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <section id="sobre" class="about" tabindex="0">
+      <h2>Sobre mim</h2>
+      <p>
+        Olá! Sou David Almeida, apaixonado por desenvolvimento frontend e design digital. Gosto de transformar ideias em interfaces web bonitas, rápidas e responsivas, proporcionando experiências memoráveis para os usuários.
+      </p>
+    </section>
+    <section id="projetos" class="projects" tabindex="0">
+      <h2>Projetos</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/davidalmeida/projeto1" target="_blank" rel="noopener">Projeto 1 - Landing Page Interativa</a>
+          <p>Uma landing page moderna com animações e integração com API para captar leads.</p>
+        </li>
+        <li>
+          <a href="https://github.com/davidalmeida/projeto2" target="_blank" rel="noopener">Projeto 2 - Dashboard Analítico</a>
+          <p>Dashboard responsivo para visualização de dados em tempo real com gráficos dinâmicos.</p>
+        </li>
+        <li>
+          <a href="https://github.com/davidalmeida/projeto3" target="_blank" rel="noopener">Projeto 3 - Blog Pessoal</a>
+          <p>Blog totalmente customizado com sistema de comentários e temas claros e escuros.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="contato" class="contact" tabindex="0">
+      <h2>Contato</h2>
+      <p>Quer conversar sobre um projeto ou oportunidade? Me envie uma mensagem!</p>
+      <p>Email: <a href="mailto:david.almeida@email.com" style="color:#f6c1ff;">david.almeida@email.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/davidalmeida" target="_blank" rel="noopener" style="color:#f6c1ff;">linkedin.com/in/davidalmeida</a></p>
+      <p>GitHub: <a href="https://github.com/davidalmeida" target="_blank" rel="noopener" style="color:#f6c1ff;">github.com/davidalmeida</a></p>
+    </section>
+    <footer>
+      &copy; 2024 David Almeida. Todos os direitos reservados.
+    </footer>
+  </div>
+</body>
+</html>
+
